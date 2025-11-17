@@ -10,17 +10,13 @@ import (
 
 )
 
-func GerarToker(userId int, email string) (string, error) {
-	return "", nil
-}
-
 func main() {
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
 
-	router := gin.Default()
+	router := gin.Default() // inicia o gin com um logger e middleware
 
 	routes.InitRoutes(&router.RouterGroup)	
 
