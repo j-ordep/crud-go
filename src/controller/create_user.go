@@ -33,9 +33,8 @@ func CreateUser(c *gin.Context) {
 		Name: userRequest.Name,
 		Age: userRequest.Age,
 	}
-	logger.Info("user created",
-		zap.String("jorney","createUser"),
-	)
+	
+	logger.Info("user created", zap.String("jorney","createUser"))
 
 	c.JSON(http.StatusOK, response)
 }
