@@ -7,7 +7,6 @@ import (
 	"github.com/j-ordep/crud-go/src/controller/routes"
 	"github.com/joho/godotenv"
 
-
 )
 
 func main() {
